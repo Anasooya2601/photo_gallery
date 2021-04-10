@@ -9,10 +9,9 @@ const UploadForm=()=>{
         
         if(selected && types.includes(selected.types)){
             setFile(selected);
-            setError(' ');
         }else{
             setFile(null);
-setError("please select correct image file in jpeg or png")
+
         }
     }
 return(
@@ -20,9 +19,6 @@ return(
 
 <form>
     <input type="file" onChange={changeHandler}/>
-    <div className="output">
-        {error && <div className="error">{error}</div>}
-    </div>
 </form>
 
 )

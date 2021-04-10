@@ -9,7 +9,7 @@ const UploadForm=()=>{
         
         if(selected && types.includes(selected.types)){
             setFile(selected);
-            setError(' ');
+            setError("");
         }else{
             setFile(null);
 setError("please select correct image file in jpeg or png")
