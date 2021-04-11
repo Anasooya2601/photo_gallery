@@ -1,16 +1,10 @@
 {
   "hosting": {
-    "public": "build/",
+    "public": "dist/photo_gallery",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   }
 }
