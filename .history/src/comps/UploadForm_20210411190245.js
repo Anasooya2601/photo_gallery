@@ -20,7 +20,7 @@ return(
 
 <form>
     <label>
-    <input type="file" onChange={changeHandler}/>
+    <input type="file" onChange={handleChange}/>
     <span>+</span>
         </label>
  
