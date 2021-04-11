@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "build/photo_gallery",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
