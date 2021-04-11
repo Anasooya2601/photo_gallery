@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
-:root{
-  --primary: #eeb0ab;
+.root{
+  --primary: #efb6b2;
   --secondary:#4e4e4e;
   --error:#ff4a4a;
 }
@@ -8,7 +8,6 @@
 
 body{
   font-family: 'Inconsolata', monospace;
-  color: var(--secondary);
 }
 .App{
   max-width:960;
@@ -26,10 +25,6 @@ text-align: center;
 .title h2{
   margin-top: 60px;
   font-size: 2.6rem;
-}
-form{
-  margin: 30px auto 10px;
-  text-align: center;
 }
 label input{
   height: 0;
@@ -66,27 +61,3 @@ progress-bar */
   background: var(--primary);
   margin-top: 20px;
 }
-
-/* image grid style */
-.img-grid{
-margin: 20px auto;
-display:grid ;
-grid-template-columns:1fr 1fr 1fr;
-grid-gap:40px;
-}
-.img-wrap{
-overflow: hidden;
-height: 0;
-padding: 50% 0;
-position: relative;
-opacity: 0;
-}
-.img-wrap img{
-min-width: 100%;
-min-height: 100%;
-max-width: 150%;
-position: absolute;
-top: 0;
-left: 0;
-}
-/* modal styles */

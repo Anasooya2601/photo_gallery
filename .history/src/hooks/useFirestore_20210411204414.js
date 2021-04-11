@@ -7,7 +7,7 @@ const useFirestore=(collection)=>{
   projectFirestore.collection(collection)
   .orderBy('createdAt','desc')
   .onSnapshot((snap)=>{
-    let documents=[];
+    let document=[];
     snap.forEach(doc=>{
       documents.push({...doc.data(),id:doc.id})
     });
@@ -18,4 +18,3 @@ const useFirestore=(collection)=>{
 },[collection])
   return{docs};
 }
-export default useFirestore;
