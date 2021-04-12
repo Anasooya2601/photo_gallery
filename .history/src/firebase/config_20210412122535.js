@@ -1,8 +1,7 @@
 import * as firebase from 'firebase/app';
 import 'firebase/storage';
 import 'firebase/firestore';
-
-
+import "firebase/auth";
 
 
   
@@ -19,8 +18,8 @@ import 'firebase/firestore';
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  // firebase.analytics();
- 
+  firebase.analytics();
+  firebase.auth()
   const projectStorage = firebase.storage();
   const projectFirestore = firebase.firestore();
   //initial 

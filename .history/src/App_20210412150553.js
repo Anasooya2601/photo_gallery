@@ -4,7 +4,7 @@ import Title from './comps/Title';
 import UploadForm from './comps/UploadForm';
 
 import Modal from './comps/Modal';
-import GoogleBtn from './comps/GoogleBtn';
+import GoogleBtn from './comps/Google';
 
 function App() {
   

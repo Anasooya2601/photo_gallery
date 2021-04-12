@@ -1,9 +1,8 @@
 import * as firebase from 'firebase/app';
 import 'firebase/storage';
 import 'firebase/firestore';
-
-
-
+import "firebase/auth";
+import firebaseConfig from './firebaseConfig';
 
   
   // Your web app's Firebase configuration
@@ -19,12 +18,12 @@ import 'firebase/firestore';
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  // firebase.analytics();
- 
+  firebase.analytics();
+  firebase.auth()
   const projectStorage = firebase.storage();
   const projectFirestore = firebase.firestore();
   //initial 
   const timestamp = firebase.firestore.FieldValue.serverTimestamp;
-
+  export const auth = app.auth()
  
-  export { projectStorage, projectFirestore, timestamp};
+  export { projectStorage, projectFirestore, timestamp, firebaseConfig};

@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const Title=()=>{
-   
+    const [error, setError] = useState("")
     return(
         <div className="title">
             <h1>PicsGram</h1>

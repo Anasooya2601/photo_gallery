@@ -4,7 +4,7 @@ import Title from './comps/Title';
 import UploadForm from './comps/UploadForm';
 
 import Modal from './comps/Modal';
-import GoogleBtn from './comps/GoogleBtn';
+
 
 function App() {
   
@@ -13,7 +13,8 @@ function App() {
    
     <div className="App">
     
-    <GoogleBtn/>
+
+   < path="./Title"/>
    <Title />
    <UploadForm/>
    <ImageGrid setSelectedImg={setSelectedImg}/>

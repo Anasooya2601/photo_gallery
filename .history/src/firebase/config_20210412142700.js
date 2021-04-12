@@ -1,7 +1,7 @@
 import * as firebase from 'firebase/app';
 import 'firebase/storage';
 import 'firebase/firestore';
-
+import "firebase/auth";
 
 
 
@@ -26,5 +26,5 @@ import 'firebase/firestore';
   //initial 
   const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
- 
+
   export { projectStorage, projectFirestore, timestamp};

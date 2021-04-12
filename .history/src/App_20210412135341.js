@@ -4,24 +4,24 @@ import Title from './comps/Title';
 import UploadForm from './comps/UploadForm';
 
 import Modal from './comps/Modal';
-import GoogleBtn from './comps/GoogleBtn';
+import socialMediaAuth from './comps/service/auth';
 
 function App() {
-  
+  const handleOnClick=async(provider)=>{
+const res=await socialMediaAuth(provider);
+console.log(res);
+  }
   const [selectedImg,setSelectedImg]=useState(null);
   return (
-   
     <div className="App">
-    
-    <GoogleBtn/>
-   <Title />
+ <button onClick={()=>handleOnClick(googleProvider)}>Google</button>
+   <Title/>
    <UploadForm/>
    <ImageGrid setSelectedImg={setSelectedImg}/>
    {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg}/>}
 
-
+  
         </div>
-       
   );
 }
 
