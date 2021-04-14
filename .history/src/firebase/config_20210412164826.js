@@ -2,16 +2,20 @@ import * as firebase from 'firebase/app';
 import 'firebase/storage';
 import 'firebase/firestore';
 
-// Your web app's Firebase configuration
+
+
+
+  
+  // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
-    apiKey: "AIzaSyCSRCS8xStodX_fqZwiq8uhMIvQhQ4o8gQ",
-    authDomain: "picsgram-e80df.firebaseapp.com",
-    projectId: "picsgram-e80df",
-    storageBucket: "picsgram-e80df.appspot.com",
-    messagingSenderId: "73497365453",
-    appId: "1:73497365453:web:e89a0bbacff1f7faef9284",
-    measurementId: "G-FC3TC748QG"
+    apiKey: "AIzaSyCypl3y8uOX28lEoZBNqjdk9dLf3S3-S5Y",
+    authDomain: "photogallery-20475.firebaseapp.com",
+    projectId: "photogallery-20475",
+    storageBucket: "photogallery-20475.appspot.com",
+    messagingSenderId: "721011186283",
+    appId: "1:721011186283:web:8d2de4d66f4eee2df26f2e",
+    measurementId: "G-618HP9YJY3"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -22,5 +26,6 @@ import 'firebase/firestore';
   //initial 
   const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
-
+  export const provider = new firebase.auth.GoogleAuthProvider();
+  export const auth = firebase.auth()
   export { projectStorage, projectFirestore, timestamp};

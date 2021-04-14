@@ -2,16 +2,20 @@ import * as firebase from 'firebase/app';
 import 'firebase/storage';
 import 'firebase/firestore';
 
-// Your web app's Firebase configuration
+
+
+
+  
+  // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
+var firebaseConfig = {
     apiKey: "AIzaSyCSRCS8xStodX_fqZwiq8uhMIvQhQ4o8gQ",
     authDomain: "picsgram-e80df.firebaseapp.com",
     projectId: "picsgram-e80df",
     storageBucket: "picsgram-e80df.appspot.com",
     messagingSenderId: "73497365453",
-    appId: "1:73497365453:web:e89a0bbacff1f7faef9284",
-    measurementId: "G-FC3TC748QG"
+    appId: "1:73497365453:web:3bc43df5e9a4f7b2ef9284",
+    measurementId: "G-L1YC3DTSJE"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);

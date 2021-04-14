@@ -9,9 +9,9 @@ ReactDOM.render(
 
  
   <React.StrictMode>
-      
+      <FirebaseAppProvider firebaseConfig={ firebaseConfig }>
   <App/>
-
+  </FirebaseAppProvider>,
     </React.StrictMode>,
   document.getElementById('root')
 );

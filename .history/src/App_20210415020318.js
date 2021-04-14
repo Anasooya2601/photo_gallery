@@ -7,12 +7,12 @@ import Modal from './comps/Modal';
 
 // import GoogleLogin from 'react-google-login';
 function App() {
-
+  const [ signInOrUp, setSignInOrUp ] = useState( '' );
   const [selectedImg,setSelectedImg]=useState(null);
   return (
    
     <div className="App">
-   
+   <h1>Firebase login</h1>
       
    <Title />
    <UploadForm/>

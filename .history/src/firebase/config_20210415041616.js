@@ -10,8 +10,8 @@ import 'firebase/firestore';
     projectId: "picsgram-e80df",
     storageBucket: "picsgram-e80df.appspot.com",
     messagingSenderId: "73497365453",
-    appId: "1:73497365453:web:e89a0bbacff1f7faef9284",
-    measurementId: "G-FC3TC748QG"
+    appId: "1:73497365453:web:57e915c8b8ebce65ef9284",
+    measurementId: "G-LTW53ERREH"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);

@@ -3,15 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import GoogleLogin from 'react-google-login'
 
 ReactDOM.render(
 
- 
+    <GoogleLogin
+    clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+    buttonText="Login"
+    onSuccess={responseGoogle}
+    onFailure={responseGoogle}
+    cookiePolicy={'single_host_origin'}
+  />,
   <React.StrictMode>
-      
   <App/>
-
     </React.StrictMode>,
   document.getElementById('root')
 );

@@ -5,15 +5,21 @@ import UploadForm from './comps/UploadForm';
 
 import Modal from './comps/Modal';
 
-// import GoogleLogin from 'react-google-login';
+import GoogleLogin from 'react-google-login';
 function App() {
-
+  
   const [selectedImg,setSelectedImg]=useState(null);
   return (
    
     <div className="App">
+,  <GoogleLogin
+    clientId="721011186283-j80g8cnf2liket03b8dmd1oclt9lkuin.apps.googleusercontent.com"
+    buttonText="Login"
+    onSuccess={responseGoogle}
+    onFailure={responseGoogle}
+    cookiePolicy={'single_host_origin'}
+  />,
    
-      
    <Title />
    <UploadForm/>
    <ImageGrid setSelectedImg={setSelectedImg}/>

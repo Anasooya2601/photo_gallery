@@ -12,7 +12,7 @@ function App() {
   return (
    
     <div className="App">
-   
+   <h1>Firebase login</h1>
       
    <Title />
    <UploadForm/>

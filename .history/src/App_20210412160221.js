@@ -4,16 +4,16 @@ import Title from './comps/Title';
 import UploadForm from './comps/UploadForm';
 
 import Modal from './comps/Modal';
+import GoogleBtn from './comps/GoogleBtn';
 
-// import GoogleLogin from 'react-google-login';
 function App() {
-
+  
   const [selectedImg,setSelectedImg]=useState(null);
   return (
    
     <div className="App">
-   
-      
+,
+    <GoogleBtn/>
    <Title />
    <UploadForm/>
    <ImageGrid setSelectedImg={setSelectedImg}/>

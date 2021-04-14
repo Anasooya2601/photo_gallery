@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { FirebaseAppProvider } from 'reactfire';
 
 ReactDOM.render(
 
@@ -11,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
       
   <App/>
-
+  </FirebaseAppProvider>,
     </React.StrictMode>,
   document.getElementById('root')
 );
