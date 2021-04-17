@@ -16,8 +16,9 @@ function App() {
       
    <div className="app__header">
       <Title />
-  </div>
-  <h2>Upload your pic</h2>
+
+
+</div>
    <UploadForm/>
    <ImageGrid setSelectedImg={setSelectedImg}/>
    {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg}/>}

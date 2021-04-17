@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
 :root{
-  --primary: #7e7e2f;
-  --secondary:#254f27;
+  --primary: #eeb0ab;
+  --secondary:#4e4e4e;
   --error:#ff4a4a;
 }
 
@@ -26,14 +26,13 @@ body{
   letter-spacing:2px;
   font-weight:normal;
 }
-h2{
-  margin-top: 60px;
-  font-size: 1.6rem;
-  text-align: center;
-  font-weight:bold;
-  color:  var(--secondary);
+.h2 {
+text-align: center;
 }
-
+.title h2{
+  margin-top: 60px;
+  font-size: 2.6rem;
+}
 form{
   margin: 30px auto 10px;
   text-align: center;
