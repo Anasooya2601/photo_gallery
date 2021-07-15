@@ -1,4 +1,4 @@
-# 🖼️ PHOTOGALLERY WebAPP USING REACT JS ⚛️
+# 🖼️ Photogallery WebApp using react js ⚛️
 
 **ABOUT THE PROJECT🖊️**
 In this project,we can upload pictures and store them in database.
